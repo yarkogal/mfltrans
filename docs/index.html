@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <link rel="shortcut icon" href="images/logo_right.png" type="image/png">
+    <title>Трансферы медиалиги</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__high">
+            <div class="wrapper">
+                <div class="header__high-container">
+                    <a href="https://t.me/mediafootballleague/" class="header__social"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.03371 5.3646C5.07015 3.606 7.76174 2.44661 9.10848 1.88646C12.9537 0.287098 13.7527 0.00927179 14.2735 9.78151e-05C14.388 -0.0019199 14.6441 0.0264666 14.81 0.161078C14.9501 0.274741 14.9886 0.428283 15.0071 0.536048C15.0255 0.643813 15.0485 0.889305 15.0302 1.08113C14.8219 3.27053 13.9202 8.58363 13.4615 11.0358C13.2674 12.0734 12.8853 12.4213 12.5153 12.4553C11.7112 12.5293 11.1006 11.924 10.3218 11.4135C9.10321 10.6146 8.41475 10.1173 7.23185 9.33784C5.8648 8.43697 6.751 7.94184 7.53008 7.13266C7.73397 6.92089 11.2767 3.69848 11.3453 3.40616C11.3539 3.3696 11.3618 3.23332 11.2809 3.16136C11.1999 3.0894 11.0804 3.11401 10.9942 3.13358C10.872 3.16132 8.92517 4.44808 5.1538 6.99386C4.60121 7.37331 4.10069 7.55819 3.65224 7.5485C3.15786 7.53782 2.20688 7.26897 1.49992 7.03916C0.632799 6.7573 -0.0563681 6.60828 0.00364284 6.12958C0.0349003 5.88025 0.378256 5.62526 1.03371 5.3646Z"
+                                fill="white" />
+                        </svg></a>
+                    <a href="https://vk.com/media.football.league" class="header__social"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 11" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.74794 0H0.729173C0.15225 0 0.0368652 0.271385 0.0368652 0.571385C0.0368652 1.10585 0.720865 3.75877 3.22425 7.26646C4.89225 9.66277 7.24333 10.9615 9.3821 10.9615C10.6661 10.9615 10.8249 10.6726 10.8249 10.1769V8.36585C10.8249 7.78892 10.9467 7.67354 11.3529 7.67354C11.6529 7.67354 12.1652 7.82308 13.3642 8.97785C14.7332 10.3477 14.9584 10.9615 15.7282 10.9615H17.7479C18.3249 10.9615 18.6138 10.6726 18.4467 10.1031C18.2649 9.53631 17.6113 8.71292 16.7436 7.73723C16.2729 7.18154 15.5676 6.58246 15.3535 6.28246C15.1065 5.96554 15.121 5.79379 15.2534 5.55186C15.3158 5.4378 15.3907 5.33202 15.4651 5.2254C15.9483 4.53296 17.8464 1.76811 18.0701 0.742154C18.1993 0.314769 18.0701 0 17.459 0H15.4402C14.953 0 14.7145 0.244615 14.5818 0.526094C14.5677 0.556039 14.5559 0.585052 14.543 0.615539C14.3986 0.956798 13.4214 3.20076 12.0802 4.69938C11.6095 5.17015 11.3953 5.32062 11.1387 5.32062C11.0104 5.32062 10.8249 5.17015 10.8249 4.74277V0.742154C10.8249 0.228923 10.6762 0 10.2479 0H7.0744C6.7541 0 6.56117 0.238154 6.56117 0.464308C6.56117 0.950769 7.28856 1.06338 7.36333 2.43231V5.40554C7.36333 6.05815 7.2461 6.17631 6.98856 6.17631C6.30456 6.17631 4.63933 3.66185 3.65163 0.785538C3.45779 0.226154 3.26394 0 2.74794 0Z"
+                                fill="white" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="wrapper">
+                <nav class="menu__navigation">
+                    <ul class="navigation__list">
+                        <div class="navigation__list-container">
+                            <a class="navigation__item navigation__item-costs" id="navigation__item-costs-dropdown">
+                                Стоимости <svg id="navigation__item-costs-dropdown-svg"
+                                    xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13"
+                                    fill="none">
+                                    <path
+                                        d="M10.79 4.8479L7.25836 8.37957C6.84127 8.79665 6.15877 8.79665 5.74169 8.37957L2.21002 4.8479"
+                                        stroke="#292D32" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="dropdown__costs-container-main" id="dropdown__costs">
+                                <div class="dropdown__costs">
+                                    <a href="#" class="dropdown__costs-title">
+                                        Список ценных игроков
+                                    </a>
+                                    <div class="costum-hr"></div>
+                                    <div class="dropdown__costs-container">
+                                        <div class="dropdown__costs-header">
+                                            <div class="dropdown__costs-item-number" style="color: #fff">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Игрок
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Клуб
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                Стоимость
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__costs-item">
+                                            <div class="dropdown__costs-item-number">
+                                                #1
+                                            </div>
+                                            <div class="dropdown__costs-item-player">
+                                                Литвин
+                                            </div>
+                                            <div class="dropdown__costs-item-team">
+                                                Сахалинец
+                                            </div>
+                                            <div class="dropdown__costs-item-cost">
+                                                1 100 000 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="navigation__item">
+                            Трансферы
+                        </a>
+                        <div class="navigation__list-container-second">
+                            <a class="navigation__item navigation__item-teams" id="navigation__item-teams-dropdown">
+                                Команды <svg id="navigation__item-teams-dropdown-svg" xmlns="http://www.w3.org/2000/svg"
+                                    width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                    <path
+                                        d="M10.79 4.8479L7.25836 8.37957C6.84127 8.79665 6.15877 8.79665 5.74169 8.37957L2.21002 4.8479"
+                                        stroke="#292D32" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="dropdown__teams-container-main" id="dropdown__team">
+                                <div class="dropdown__teams">
+                                    <h3 class="dropdown__teams-title">
+                                        Список команд
+                                    </h3>
+                                    <div class="costum-hr"></div>
+                                    <div class="dropdown__teams-container">
+                                        <ul class="dropdown__teams-list">
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #1
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #2
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    Сахалинец
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #3
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #4
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #5
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #6
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #7
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #8
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                        </ul>
+                                        <ul class="dropdown__teams-list">
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #9
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #10
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #11
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #12
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #13
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #14
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #15
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #16
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                        </ul>
+                                        <ul class="dropdown__teams-list">
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #17
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #18
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="navigation__item">
+                            Слухи
+                        </a>
+                    </ul>
+                    <a href="#" class="main-logo-container"><img src="images/mfl.webp" class="main-logo"></a>
+                    <ul class="navigation__list navigation__list-last">
+                        <a href="#" class="navigation__item navigation__item-last">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+                                fill="none">
+                                <g opacity="0.8" filter="url(#filter0_d_8_49)">
+                                    <circle cx="10" cy="9.5" r="2" fill="#FE5E00" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_8_49" x="0.6" y="0.0999999" width="18.8" height="18.8"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset />
+                                        <feGaussianBlur stdDeviation="3.7" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.996078 0 0 0 0 0.368627 0 0 0 0 0 0 0 0 0.5 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_8_49" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_8_49"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg> Интервью
+                        </a>
+                        <a href="#" class="navigation__item navigation__item-last">
+                            Рейтинги
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header__burger">
+            <a href="#"><img class="header__burger-logo" src="images/mfl.webp" alt=""></a>
+            <button class="header__burger-menu" id="header__burger-button">
+                <div class="stick-first"></div>
+                <div class="stick-second"></div>
+            </button>
+            <div class="header__burger-menu-open" id="header__burger-button-open">
+                <div class="header__burger-open-container" id="header__burger-open-container">
+                    <div class="stick-first-open"></div>
+                    <div class="stick-second-open"></div>
+                </div>
+                <div class="header__burger-active" id="header__burger-active">
+                    <ul class="header__burger-active-list">
+                        <a href="#" class="header__burger-active-item">
+                            Стоимости
+                        </a>
+                        <a href="#" class="header__burger-active-item">
+                            Трансферы
+                        </a>
+                        <li class="header__burger-active-item" id="header__burger-active-teams">
+                            <span id="header__burger-active-teams-text"> Команды </span> <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 13 13"
+                                fill="none">
+                                <path
+                                    d="M10.79 4.8479L7.25836 8.37957C6.84127 8.79665 6.15877 8.79665 5.74169 8.37957L2.21002 4.8479"
+                                    stroke="#292D32" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="dropdown__teams-container-main dropdown__burger-teams-container-main" id="dropdown__burger-team">
+                                <div class="dropdown__teams">
+                                    <h3 class="dropdown__teams-title dropdown__burger-teams-title">
+                                        Список команд
+                                    </h3>
+                                    <div class="costum-hr"></div>
+                                    <div class="dropdown__teams-container">
+                                        <ul class="dropdown__teams-list">
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #1
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #2
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    Сахалинец
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #3
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #4
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #5
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #6
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #7
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item">
+                                                <div class="dropdown__team-item-number">
+                                                    #8
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                        </ul>
+                                        <ul class="dropdown__teams-list">
+                                            <a href="#" class="dropdown__teams-item dropdown__teams-item-second">
+                                                <div class="dropdown__team-item-number">
+                                                    #9
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item dropdown__teams-item-second">
+                                                <div class="dropdown__team-item-number">
+                                                    #10
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item dropdown__teams-item-second">
+                                                <div class="dropdown__team-item-number">
+                                                    #11
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item dropdown__teams-item-second">
+                                                <div class="dropdown__team-item-number">
+                                                    #12
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item dropdown__teams-item-second">
+                                                <div class="dropdown__team-item-number">
+                                                    #13
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    Сахалинец
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item dropdown__teams-item-second">
+                                                <div class="dropdown__team-item-number">
+                                                    #14
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item dropdown__teams-item-second">
+                                                <div class="dropdown__team-item-number">
+                                                    #15
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                            <a href="#" class="dropdown__teams-item dropdown__teams-item-second">
+                                                <div class="dropdown__team-item-number">
+                                                    #16
+                                                </div>
+                                                <img src="images/2DROTS_logo.png" alt="2drots"
+                                                    class="dropdown__team-item-photo">
+                                                <div class="dropdown__team-item-name">
+                                                    2DROTS
+                                                </div>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <a href="#" class="header__burger-active-item">
+                            Слухи
+                        </a>
+                        <a href="#" class="header__burger-active-item">
+                            Интервью
+                        </a>
+                        <a href="#" class="header__burger-active-item">
+                            Рейтинги
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="hero">
+                <div class="hero__title">
+                    <img src="images/logo.png" alt="logo" class="hero__title-image">
+                    В центре внимания
+                </div>
+                <img src="images/season4_pc.png" alt="mfl" class="hero__image">
+                <img src="images/mfl__phone.PNG" alt="" class="hero__image-phone">
+            </section>
+            <section class="top-players">
+                <div class="top-players__title">
+                    <p class="top-players__title-main-text">
+                        Топ игроков
+                    </p>
+                    <div class="top-players__title-all-pointers">
+                        <button class="top-players__title-pointer-active" id="valueble-players">
+                            Ценные
+                        </button>
+                        <button class="top-players__title-pointer-second" id="popular-players">
+                            Популярные
+                        </button>
+                    </div>
+                </div>
+                <ul class="top-players__list top-players__list-active" id="valueble-players-list">
+                    <li class="top-players__item">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #1
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #4
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #7
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #2
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #5
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #8
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #3
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #6
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #9
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="top-players__list" id="popular-players-list">
+                    <li class="top-players__item">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #1
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Litvin
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #4
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #7
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #2
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #5
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #8
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #3
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #6
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-players__item top-players__item-mobile">
+                        <div class="top-players__item-photo">
+                            <div class="top-players__item-photo-ellipse">
+                                <img src="images/litvin.png" alt="">
+                            </div>
+                            <div class="pointer">
+                                #9
+                            </div>
+                        </div>
+                        <div class="top-players__item-description">
+                            <div class="top-players__item-description-name">
+                                Михаил Литвин
+                            </div>
+                            <div class="top-players__item-description-team">
+                                <img src="images/image_sahalin.png" alt="sahalin"
+                                    class="top-players__item-description-team-logo">
+                                Сахалинец
+                            </div>
+                            <div class="top-players__item-description-cost">
+                                рыночная стоимость: <span>950 тыс. ₽</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="top-players__show-more">
+                    <a href="#">Смотреть всех</a>
+                </div>
+            </section>
+            <section class="news">
+                <div class="news__title">
+                    Главное MFL
+                </div>
+                <ul class="news__list">
+                    <a href="#" class="news__item">
+                        <img src="images/news1.jpg" alt="" class="news__item-photo">
+                        <div class="pointer news__pointer">
+                            #NEW
+                        </div>
+                        <h3 class="news__item-title">
+                            Закрытие трансферного окна
+                        </h3>
+                        <p class="news__item-text">
+                            Роман Герасимов присоединился к тренерскому штабу Виталия Миллера в FC Bus.
+                        </p>
+                    </a>
+                    <a href="#" class="news__item">
+                        <img src="images/news1.jpg" alt="" class="news__item-photo">
+                        <div class="pointer news__pointer">
+                            #NEW
+                        </div>
+                        <h3 class="news__item-title">
+                            Закрытие трансферного окна
+                        </h3>
+                        <p class="news__item-text">
+                            Роман Герасимов присоединился к тренерскому штабу Виталия Миллера в FC Bus.
+                        </p>
+                    </a>
+                    <a href="#" class="news__item news__item-mobile">
+                        <img src="images/news1.jpg" alt="" class="news__item-photo">
+                        <div class="pointer news__pointer">
+                            #NEW
+                        </div>
+                        <h3 class="news__item-title">
+                            Закрытие трансферного окна
+                        </h3>
+                        <p class="news__item-text">
+                            Роман Герасимов присоединился к тренерскому штабу Виталия Миллера в FC Bus.
+                        </p>
+                    </a>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <hr class="hr-before-footer">
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__container">
+                <a href="#"><img src="images/mfl.webp" alt="mfl" class="footer__logo"></a>
+                <div class="footer__links">
+                    <ul class="footer__links-list">
+                        <a href="#" class="footer__links-item">
+                            <span>Главное</span>
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            <span> О проекте </span>
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            Рейтинги
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            Интервью
+                        </a>
+                    </ul>
+                    <ul class="footer__links-list">
+                        <a href="#" class="footer__links-item">
+                            <span>Пользователю</span>
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            Защита данных
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            Конфеденциальность
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            Условия пользования
+                        </a>
+                    </ul>
+                    <ul class="footer__links-list">
+                        <a href="#" class="footer__links-item">
+                            <span>Общее</span>
+                        </a>
+                        <a href="#" class="footer__links-item">
+                            Сообщить об ошибке
+                        </a>
+                        <div class="footer__links-social-container">
+                            <a href="https://t.me/mediafootballleague/"
+                                class="footer__links-item footer__links-item-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30"
+                                    fill="none">
+                                    <g opacity="0.5">
+                                        <rect x="0.5" width="30" height="30" rx="5.67" fill="#24262C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M8.45671 14.5948C12.4931 12.8362 15.1847 11.6768 16.5315 11.1167C20.3767 9.51732 21.1757 9.2395 21.6965 9.23032C21.811 9.2283 22.0671 9.25669 22.233 9.3913C22.3731 9.50497 22.4116 9.65851 22.4301 9.76627C22.4485 9.87404 22.4715 10.1195 22.4532 10.3113C22.2449 12.5008 21.3432 17.8139 20.8845 20.266C20.6904 21.3036 20.3083 21.6515 19.9383 21.6856C19.1342 21.7596 18.5236 21.1542 17.7449 20.6437C16.5262 19.8449 15.8378 19.3476 14.6549 18.5681C13.2878 17.6672 14.174 17.1721 14.9531 16.3629C15.157 16.1511 18.6997 12.9287 18.7683 12.6364C18.7769 12.5998 18.7848 12.4635 18.7039 12.3916C18.6229 12.3196 18.5034 12.3442 18.4172 12.3638C18.295 12.3915 16.3482 13.6783 12.5768 16.2241C12.0242 16.6035 11.5237 16.7884 11.0752 16.7787C10.5809 16.768 9.62988 16.4992 8.92292 16.2694C8.0558 15.9875 7.36664 15.8385 7.42665 15.3598C7.4579 15.1105 7.80126 14.8555 8.45671 14.5948Z"
+                                            fill="#E9E9E9" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="https://vk.com/media.football.league"
+                                class="footer__links-item footer__links-item-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30"
+                                    fill="none">
+                                    <rect x="0.833344" width="30" height="30" rx="5.67" fill="#24262C" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.31423 9.80786H7.29546C6.71853 9.80786 6.60315 10.0792 6.60315 10.3792C6.60315 10.9137 7.28715 13.5666 9.79053 17.0743C11.4585 19.4706 13.8096 20.7694 15.9484 20.7694C17.2324 20.7694 17.3911 20.4805 17.3911 19.9848V18.1737C17.3911 17.5968 17.513 17.4814 17.9191 17.4814C18.2191 17.4814 18.7315 17.6309 19.9305 18.7857C21.2995 20.1556 21.5247 20.7694 22.2945 20.7694H24.3142C24.8911 20.7694 25.1801 20.4805 25.013 19.9109C24.8311 19.3442 24.1776 18.5208 23.3099 17.5451C22.8391 16.9894 22.1339 16.3903 21.9198 16.0903C21.6728 15.7734 21.6873 15.6017 21.8197 15.3597C21.8821 15.2457 21.9569 15.1399 22.0314 15.0333C22.5146 14.3408 24.4127 11.576 24.6364 10.55C24.7656 10.1226 24.6364 9.80786 24.0253 9.80786H22.0065C21.5193 9.80786 21.2808 10.0525 21.1481 10.334C21.134 10.3639 21.1222 10.3929 21.1093 10.4234C20.9649 10.7647 19.9877 13.0086 18.6465 14.5072C18.1758 14.978 17.9616 15.1285 17.705 15.1285C17.5767 15.1285 17.3911 14.978 17.3911 14.5506V10.55C17.3911 10.0368 17.2425 9.80786 16.8142 9.80786H13.6407C13.3204 9.80786 13.1275 10.046 13.1275 10.2722C13.1275 10.7586 13.8548 10.8712 13.9296 12.2402V15.2134C13.9296 15.866 13.8124 15.9842 13.5548 15.9842C12.8708 15.9842 11.2056 13.4697 10.2179 10.5934C10.0241 10.034 9.83023 9.80786 9.31423 9.80786Z"
+                                        fill="#E9E9E9" />
+                                </svg>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
